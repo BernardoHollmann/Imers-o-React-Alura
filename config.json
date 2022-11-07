@@ -1,0 +1,129 @@
+{
+    "name": "Bernardo Hollmann",
+    "job": "Trader | Analista de Comércio Exterior | Power BI | Developer",
+    "github": "BernardoHollmann",
+    "banner": "./img/banner.jpg",
+    "playlists": {
+        "Comex": [
+            {
+                "title": "Entenda de uma vez por todas o que é NCM",
+                "url": "https://www.youtube.com/watch?v=Bg3STTztHpY",
+                "thumb": "https://i.ytimg.com/an_webp/Bg3STTztHpY/mqdefault_6s.webp?du=3000&sqp=CMDZpZsG&rs=AOn4CLDXmGpoddcGT--9-vIiMD6rrldo9g"
+            },
+            {
+                "title": "Qual a diferença entre despacho e desembaraço aduaneiro?",
+                "url": "https://www.youtube.com/watch?v=nNsi7mi8xlQ",
+                "thumb": "https://i.ytimg.com/an_webp/nNsi7mi8xlQ/mqdefault_6s.webp?du=3000&sqp=CPyHppsG&rs=AOn4CLBwZLILT38xVvZaX_Yb5XLOTKpuVQ"
+            },
+            {
+                "title": "O papel da Fatura Proforma no Comércio Exterior",
+                "url": "https://www.youtube.com/watch?v=qD09We0J6Q8",
+                "thumb": "https://i.ytimg.com/an_webp/qD09We0J6Q8/mqdefault_6s.webp?du=3000&sqp=CK3ypZsG&rs=AOn4CLCscAmWFKGD5aBiazR-pw6JuGyfxA"
+            },
+            {
+                "title": "Um Guia Prático para Você Localizar os Tributos e Licenças na Importação | comexblog.com",
+                "url": "https://www.youtube.com/watch?v=GhpoIIg5kyw",
+                "thumb": "https://i.ytimg.com/an_webp/GhpoIIg5kyw/mqdefault_6s.webp?du=3000&sqp=CLDjpZsG&rs=AOn4CLD0DBKQHsEm7BOAcyNeIaB3HcU9-A"
+            },
+            {
+                "title": "Como Descobrir se o produto Necessita de Licença de Importação?",
+                "url": "https://www.youtube.com/watch?v=-YOaxCuAZ2E",
+                "thumb": "https://i.ytimg.com/an_webp/-YOaxCuAZ2E/mqdefault_6s.webp?du=3000&sqp=CNWhppsG&rs=AOn4CLBLiCP9k-yZoCspw5OUL29YHDFmyw"
+            },
+            {
+                "title": "O que é Drawback Suspensão?",
+                "url": "https://www.youtube.com/watch?v=KsSvqtLlvD4",
+                "thumb": "https://i.ytimg.com/an_webp/KsSvqtLlvD4/mqdefault_6s.webp?du=3000&sqp=CNjMpZsG&rs=AOn4CLDbXIsgQj7BnyUDVYRJ2apMT6SMWg"
+            },
+            {
+                "title": "We Were Here Together - Os Enigmas deste Mundo",
+                "url": "https://www.youtube.com/watch?v=UKgQsrHUG40",
+                "thumb": "https://i.ytimg.com/an_webp/8MSDMc22HiM/mqdefault_6s.webp?du=3000&sqp=CIyYppsG&rs=AOn4CLClpU1i0ns0R_LlCL-vFhdjyfPaHQ"
+            },
+            {
+                "title": "incoterms 2020: As formas de negociar a carga.",
+                "url": "https://www.youtube.com/watch?v=mrlQ1qKzE8U",
+                "thumb": "https://i.ytimg.com/vi/mrlQ1qKzE8U/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBPsMYz0gglUVP229k8uUS3UkhHtw"
+            }
+        ],
+        "front-end": [
+            {
+                "title": "Jogo com JavaScript #01: Criando um Flappy Bird do ZERO!!!",
+                "url": "https://youtube.com/watch?v=jOAU81jdi-c",
+                "thumb": "https://img.youtube.com/vi/jOAU81jdi-c/hqdefault.jpg"
+            },
+            {
+                "title": "Jogo com JavaScript #01: Criando um Flappy Bird do ZERO!!!",
+                "url": "https://www.youtube.com/watch?v=llF6vD-RljE",
+                "thumb": "https://img.youtube.com/vi/llF6vD-RljE/hqdefault.jpg"
+            },
+            {
+                "title": "A Primeira Aula de Flutter Que Todo Mundo Deveria Ter",
+                "url": "https://www.youtube.com/watch?v=J4BVaXkwmM8",
+                "thumb": "https://img.youtube.com/vi/J4BVaXkwmM8/hqdefault.jpg"
+            },
+            {
+                "title": "O QUE SÃO FRAMEWORKS E BIBLIOTECAS? QUAIS AS DIFERENÇAS?",
+                "url": "https://www.youtube.com/watch?v=dp0zB4n3MUs",
+                "thumb": "https://img.youtube.com/vi/dp0zB4n3MUs/hqdefault.jpg"
+            },
+            {
+                "title": "Angular (O Vídeo que Você Precisava para Começar no Framework) // Dicionário do Programador",
+                "url": "https://www.youtube.com/watch?v=Yf0rC7dERjg",
+                "thumb": "https://img.youtube.com/vi/Yf0rC7dERjg/hqdefault.jpg"
+            },
+            {
+                "title": "Como Foi Programado um App Que Faz Mágica",
+                "url": "https://www.youtube.com/watch?v=I36seuWUe5s",
+                "thumb": "https://img.youtube.com/vi/I36seuWUe5s/hqdefault.jpg"
+            },
+            {
+                "title": "O que todo iniciante em Front End deveria aprender | Como manipular arrays e objetos em JavaScript",
+                "url": "https://www.youtube.com/watch?v=yS7AcF-xRUg",
+                "thumb": "https://img.youtube.com/vi/yS7AcF-xRUg/hqdefault.jpg"
+            },
+            {
+                "title": "5 Erros Históricos do CSS",
+                "url": "https://www.youtube.com/watch?v=HNjkqONzGS0",
+                "thumb": "https://img.youtube.com/vi/HNjkqONzGS0/hqdefault.jpg"
+            },
+            {
+                "title": "Deploy de Front End ATUALIZADO! | O que eu uso para hospedagem de Front End",
+                "url": "https://www.youtube.com/watch?v=d9c0r-J6CdM",
+                "thumb": "https://img.youtube.com/vi/d9c0r-J6CdM/hqdefault.jpg"
+            }
+        ],
+        "Análise de Dados": [
+            {
+                "title": "Episódio 1 - Cientista de Dados, Por Onde Começar?",
+                "url": "https://www.youtube.com/watch?v=NmCuEgkVLWo",
+                "thumb": "https://i.ytimg.com/vi/NmCuEgkVLWo/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLABR3HcbwZa8IK2dFQcEDE0nJua8w"
+            },
+            {
+                "title": "Trilha de Aprendizagem - Formação Cientista de Dados",
+                "url": "https://www.youtube.com/watch?v=lNkLSlwV3BY&t=22s",
+                "thumb": "https://i.ytimg.com/vi/lNkLSlwV3BY/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCBfamrLNd7O-TUUnC0DO3vCUq9aA"
+            },
+            {
+                "title": "Jupyter Notebook",
+                "url": "https://www.youtube.com/watch?v=JF5hQ9M2YEY",
+                "thumb": "https://i.ytimg.com/vi/JF5hQ9M2YEY/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBp3USIRkRNLnMH0EitehJR3NHlTA"
+            },
+            {
+                "title": "O que é Machine Learning? #HipstersPontoTube",
+                "url": "https://www.youtube.com/watch?v=Iuz_jc96bQk",
+                "thumb": "https://img.youtube.com/vi/Iuz_jc96bQk/hqdefault.jpg"
+            },
+            {
+                "title": "[Power BI] Você sabe a diferença entre BI e Data Science?",
+                "url": "https://www.youtube.com/watch?v=ass8pLm98us",
+                "thumb": "https://i.ytimg.com/vi/ass8pLm98us/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCtbtG2mZ8jJXfXOUMwSix2Tj3i9g"
+            },
+            {
+                "title": "[Power BI] NOVIDADE INCRÍVEL: Medidas Rápidas!",
+                "url": "https://www.youtube.com/watch?v=jjo4elWPZr8",
+                "thumb": "https://i.ytimg.com/an_webp/jjo4elWPZr8/mqdefault_6s.webp?du=3000&sqp=CLPzpZsG&rs=AOn4CLAL37SAQOPtJMS1U3tks-w8OOY99A"
+            }
+        ]
+    }
+}
