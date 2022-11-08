@@ -1,3 +1,4 @@
+import React from "react";
 import config from "../config.json";
 import styled from "styled-components";
 import {CSSReset} from "../src/components/CSSReset";
@@ -5,6 +6,8 @@ import Menu from "../src/components/Menu";
 import {StyledTimeline} from "../src/components/Timeline";
 
 function HomePage() {
+
+    const [valorDoFiltro, setValorDaFiltro] = React.useState("")
 
     const estiloDaHomePage = { 
         //backgroundColor: "Red" 
@@ -22,9 +25,10 @@ function HomePage() {
                 flex: 1,
                 // backgroundColor: "red",
             }}>
-                <Menu/>
+                {/*Prop Drilling*/}
+                <Menu valorDoFiltro={valorDoFiltro} setValorDaFiltro={setValorDaFiltro}/>
                 <Header/>
-                <Timeline playlists = {config.playlists}></Timeline>
+                <Timeline searchValue = {valorDoFiltro} playlists = {config.playlists}></Timeline>
             
             </div>
         </>
@@ -90,7 +94,12 @@ function HomePage() {
     )
   }
 
-  function Timeline(props) {
+  //Home
+  //Menu
+  //Search
+  //Informação sempre desce
+
+  function Timeline({searchValue, ...props}) {
     const playlistsNames = Object.keys(props.playlists)
     //console.log(props.playlists)
 
@@ -104,13 +113,17 @@ function HomePage() {
                 //console.log(videos)
                 //console.log(playlistsNames)
                 return (
-                    <section>
+                    <section key={playlistsNames}>
                         <h2>{playlistsNames}</h2>
                         <div>
                             {
-                                videos.map((video)=>{
+                                videos.filter((video) => {
+                                    const titleNormalized = video.title.toLowerCase();
+                                    const searchValueNormalized = searchValue.toLowerCase();
+                                    return titleNormalized.includes(searchValueNormalized)
+                                }).map((video)=>{
                                     return (
-                                        <a href={video.url}>
+                                        <a key={video.url} href={video.url}>
                                             <img src={video.thumb}></img>
                                             <span>{video.title}</span>
                                         </a>
