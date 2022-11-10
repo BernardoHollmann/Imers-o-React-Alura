@@ -38,7 +38,7 @@ const StyledSwitch = styled.div`
 
 export default function DarkModeSwitch() {
     const contexto = React.useContext(colorModeContext)
-    console.log('Contexto dentro do Darkmode: ', contexto)
+    //console.log('Contexto dentro do Darkmode: ', contexto)
   return (
     <StyledSwitch>
         
