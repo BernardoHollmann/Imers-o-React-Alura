@@ -1,13 +1,45 @@
 import React from "react";
 import config from "../config.json";
 import styled from "styled-components";
-
 import Menu from "../src/components/Menu";
 import {StyledTimeline} from "../src/components/Timeline";
+import { createClient } from '@supabase/supabase-js'
+import { videoService } from "../src/services/videoServices";
+
+const PROJECT_URL = 'https://dwhfukyeofftszqpbllo.supabase.co'
+const PUBLIC_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImR3aGZ1a3llb2ZmdHN6cXBibGxvIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NjgxOTc4NjMsImV4cCI6MTk4Mzc3Mzg2M30.fJCffD5EY0-1nuSye9m2PLtuP2AT2Yl17HO428vpwbU'
+const supabase = createClient(PROJECT_URL, PUBLIC_KEY)
+
+supabase.from("video")
+        .select("*")
+        .then((dados)=>{
+            console.log(dados.data)
+        })
 
 function HomePage() {
-
+    const service = videoService();
     const [valorDoFiltro, setValorDaFiltro] = React.useState("")
+    const [playlists, setPlaylists] = React.useState({});     // config.playlists
+
+    React.useEffect(() => {
+        console.log("useEffect");
+        service
+            .getAllVideos()
+            .then((dados) => {
+               // console.log(dados.data);
+                // Forma imutavel
+                const novasPlaylists = {};
+                dados?.data?.forEach((video) => {
+                    if (!novasPlaylists[video.playlist]) novasPlaylists[video.playlist] = [];
+                    novasPlaylists[video.playlist] = [
+                        video,
+                        ...novasPlaylists[video.playlist],
+                    ];
+                });
+
+                setPlaylists(novasPlaylists);
+            });
+    }, []);
 
     const estiloDaHomePage = { 
         //backgroundColor: "Red" 

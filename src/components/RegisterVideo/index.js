@@ -1,3 +1,4 @@
+import { createClient } from '@supabase/supabase-js'
 import React from "react";
 import { StyledRegisterVideo } from "./styles";
 
@@ -23,12 +24,34 @@ function useForm(propsDoForm) {
     };
 }
 
+const PROJECT_URL = 'https://dwhfukyeofftszqpbllo.supabase.co'
+const PUBLIC_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImR3aGZ1a3llb2ZmdHN6cXBibGxvIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NjgxOTc4NjMsImV4cCI6MTk4Mzc3Mzg2M30.fJCffD5EY0-1nuSye9m2PLtuP2AT2Yl17HO428vpwbU'
+const supabase = createClient(PROJECT_URL, PUBLIC_KEY)
+
+// get youtube thumbnail from video url
+function getThumbnail(url) {
+    return `https://img.youtube.com/vi/${url.split("v=")[1]}/hqdefault.jpg`;
+}
+
+/*
+function getVideoId(url) {
+     const videoId = url.split("v=")[1];
+     const ampersandPosition = videoId.indexOf("&");
+     if (ampersandPosition !== -1) {
+         return videoId.substring(0, ampersandPosition);
+     }
+     return videoId;
+}
+*/
+
+
+
 export default function RegisterVideo(){
 
     const formCadastro = useForm({
-        initialValues: { titulo: "NCM", url: "https://youtube.." }
+        initialValues: { titulo: "NCM", url: "https://www.youtube.com/watch?v=Bg3STTztHpY" }
     });
-    const [formVisivel, setFormVisivel] = React.useState(true);
+    const [formVisivel, setFormVisivel] = React.useState(false);
     /*
     ## O que precisamos para o form funcionar?
     - pegar os dados, que precisam vir do state
@@ -40,7 +63,7 @@ export default function RegisterVideo(){
 
     return (
         <StyledRegisterVideo>
-            <button className="add-video" onClick={() => setFormVisivel(false)}>
+            <button className="add-video" onClick={() => setFormVisivel(true)}>
                 +
             </button>
             {/* Ternário */}
@@ -50,6 +73,19 @@ export default function RegisterVideo(){
                     <form onSubmit={(evento) => {
                         evento.preventDefault();
                         //console.log(formCadastro.values);
+
+                        supabase.from("video").insert({
+                            title: formCadastro.values.titulo,
+                            url: formCadastro.values.url,
+                            thumb: getThumbnail(formCadastro.values.url),
+                            playlists: "comex"
+                        })
+                        .then((oqueveio) => {
+                            console.log(oqueveio);
+                         })
+                         .catch((err) => {
+                            console.log(err);
+                         })
 
                         setFormVisivel(false);
                         formCadastro.clearForm();
