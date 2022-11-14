@@ -10,7 +10,7 @@ function useForm(propsDoForm) {
     return {
         values,
         handleChange: (evento) => {
-            console.log(evento.target);
+            //console.log(evento.target);
             const value = evento.target.value;
             const name = evento.target.name
             setValues({
@@ -81,10 +81,10 @@ export default function RegisterVideo(){
                             playlists: "comex"
                         })
                         .then((oqueveio) => {
-                            console.log(oqueveio);
+                            //console.log(oqueveio);
                          })
                          .catch((err) => {
-                            console.log(err);
+                            //console.log(err);
                          })
 
                         setFormVisivel(false);

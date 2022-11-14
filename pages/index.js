@@ -13,7 +13,7 @@ const supabase = createClient(PROJECT_URL, PUBLIC_KEY)
 supabase.from("video")
         .select("*")
         .then((dados)=>{
-            console.log(dados.data)
+            //console.log(dados.data)
         })
 
 function HomePage() {
@@ -22,7 +22,7 @@ function HomePage() {
     const [playlists, setPlaylists] = React.useState({});     // config.playlists
 
     React.useEffect(() => {
-        console.log("useEffect");
+       // console.log("useEffect");
         service
             .getAllVideos()
             .then((dados) => {
