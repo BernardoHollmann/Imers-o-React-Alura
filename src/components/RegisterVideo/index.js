@@ -49,7 +49,7 @@ function getVideoId(url) {
 export default function RegisterVideo(){
 
     const formCadastro = useForm({
-        initialValues: { titulo: "NCM", url: "https://www.youtube.com/watch?v=Bg3STTztHpY" }
+        initialValues: { titulo: "NCM", url: "https://www.youtube.com/" }
     });
     const [formVisivel, setFormVisivel] = React.useState(false);
     /*

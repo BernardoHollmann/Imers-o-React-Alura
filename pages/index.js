@@ -3,8 +3,9 @@ import config from "../config.json";
 import styled from "styled-components";
 import Menu from "../src/components/Menu";
 import {StyledTimeline} from "../src/components/Timeline";
-import { createClient } from '@supabase/supabase-js'
-import { videoService } from "../src/services/videoServices";
+import { createClient } from '@supabase/supabase-js';
+//import { videoService } from "../src/services/videoServices";
+import { videoService } from "../src/Services/videoServices";
 
 const PROJECT_URL = 'https://dwhfukyeofftszqpbllo.supabase.co'
 const PUBLIC_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImR3aGZ1a3llb2ZmdHN6cXBibGxvIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NjgxOTc4NjMsImV4cCI6MTk4Mzc3Mzg2M30.fJCffD5EY0-1nuSye9m2PLtuP2AT2Yl17HO428vpwbU'
